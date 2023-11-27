@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set your GitHub and AWS credentials
-GH_USERNAME="saud73"
+GH_USERNAME="username"
 GH_TOKEN="mypat"
 AWS_REGION="eu-west-1"
 AWS_ACCOUNT_ID="124680813683"
