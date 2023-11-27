@@ -2,7 +2,7 @@
 
 # Set your GitHub and AWS credentials
 GH_USERNAME="saud73"
-GH_TOKEN="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"
+GH_TOKEN="mypat"
 AWS_REGION="eu-west-1"
 AWS_ACCOUNT_ID="124680813683"
 
@@ -37,10 +37,7 @@ for IMAGE_NAME in "ivaap-java" "ivaap-postgres" "ivaap-proxy" "ivaap-admin"; do
     # Push the image to ECR
     docker push $ECR_IMAGE:$GH_VERSION
 
-    # Clean up - Optional
-    docker image rm $GH_IMAGE
-    docker image rm $ECR_IMAGE:$GH_VERSION
-
+  
     echo "Image $GH_IMAGE moved from GHCR to ECR successfully!"
 done
 
