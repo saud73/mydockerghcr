@@ -23,7 +23,7 @@ jobs:
         run: |
           # Set your GitHub and AWS credentials
           GH_USERNAME="saud73"
-          GH_TOKEN="${{ secrets.GH_TOKEN }}"
+          GH_TOKEN="${{ secrets.GHCR_TOKEN }}"
           AWS_REGION="eu-west-1"
           AWS_ACCOUNT_ID="124680813683"
 
